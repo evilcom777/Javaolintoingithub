@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indice de Masa corporal</title>
+</head>
+<body>
+    <h1>PROGRAMA CALCULAR IMC</h1>
+
+    <Script>
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+                       
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltarLinea();
+            
+        }
+
+        function calcularImc(peso,altura){
+            imc=peso/(altura * altura)
+            return(imc);
+
+        }
+        
+
+        pesoChristiam=71
+        alturaChistiam=1.72
+        //imcChristiam=pesoChristiam/(alturaChistiam * alturaChistiam)
+        imcChristiam= calcularImc(pesoChristiam,alturaChistiam)
+        imprimir("El IMC de Christiam es:" + imcChristiam)
+
+    
+        pesoFelipe = 75
+        alturaFelipe = 1.73
+        imcFelipe= calcularImc(pesoFelipe,alturaFelipe)
+        imprimir("El IMC de Felipe es:" + imcFelipe)
+
+    </Script>
+
+</body>
+</html>
